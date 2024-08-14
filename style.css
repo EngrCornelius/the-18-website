@@ -1,0 +1,963 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-size: 18px;
+  font-family: "Neue Machina", Verdana;
+  background-color: rgb(240, 240, 240);
+  color: rgb(21, 21, 21);
+}
+/* typography */
+h1 {
+  font-size: 70px;
+  letter-spacing: -4px;
+  font-weight: 500;
+}
+h2 {
+  line-height: 0.967;
+  font-size: 60px;
+  letter-spacing: -3px;
+  font-weight: 500;
+}
+footer h2 {
+  font-size: 52px;
+  letter-spacing: -4px;
+}
+h2.large {
+  font-size: 80px;
+  font-weight: 700;
+}
+h3 {
+  font-size: 28px;
+  font-weight: 500;
+}
+h4 {
+  font-size: 20px;
+  font-weight: 700;
+}
+p {
+  font-size: 18px;
+  line-height: 1.44;
+}
+p.large {
+  font-size: 20px;
+}
+ul.large {
+  font-size: 20px;
+}
+sub,
+sup {
+  font-size: 20px;
+}
+small {
+  font-size: 18px;
+}
+/* sizing */
+h2 {
+  margin-top: 40px;
+}
+h2.large {
+  margin-top: 0;
+}
+/* links */
+a {
+  text-decoration: none;
+  color: rgb(21, 21, 21);
+}
+.btn {
+  padding: 14px 20px;
+  color: rgb(21, 21, 21);
+  background-color: white;
+}
+.btn1 {
+  padding: 14px 20px;
+  color: white;
+  background-color: rgb(21, 21, 21);
+}
+.btn2 {
+  padding: 6px 20px;
+  text-transform: uppercase;
+  border: 1px solid;
+}
+.stroke {
+  border: 1px solid white;
+}
+/* button */
+button {
+  border: none;
+}
+/* list */
+ul {
+  list-style: square;
+  list-style-position: inside;
+}
+.ftr-wrapper1 ul,
+nav ul,
+.icon-list,
+.payments,
+.accordion,
+.social {
+  list-style: none;
+}
+.payments {
+  display: flex;
+  gap: 28px;
+}
+.social {
+  display: flex;
+  gap: 10px;
+}
+/* boxstyle */
+.box .big {
+  margin: 0 40px;
+  margin-left: 0px;
+  display: flex;
+  justify-content: center;
+}
+.first {
+  border: 1px solid;
+}
+.second {
+  color: white;
+  background-color: rgb(21, 21, 21);
+}
+.third {
+  background-color: white;
+}
+/* form */
+form input,
+form button {
+  font-size: 18px;
+  font-family: "Neue Machina", Verdana;
+}
+form div {
+  width: 100%;
+  display: flex;
+}
+input {
+  width: 100%;
+  padding: 14px 16px;
+  background-color: rgb(255, 255, 255);
+  border: none;
+}
+input[placeholder="Enter your email"] {
+  color: rgb(21, 21, 21);
+}
+/* accordion */
+.acc-box-btn {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+.acc-box-open {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid;
+  padding-bottom: 20px;
+}
+.acc-box {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.no-bottom {
+  border: none;
+  padding-bottom: 0;
+}
+/* footer */
+footer {
+  background-color: rgb(21, 21, 21);
+  color: white;
+}
+.footer ul a {
+  color: white;
+}
+footer .nav,
+dl {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+dt {
+  font-weight: 700;
+}
+/* navigataion */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav div {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+/* display */
+.small-display {
+  display: none;
+}
+/* largescreen */
+.container {
+  width: 100%;
+  max-width: 1512px;
+  margin: 0 auto;
+}
+header {
+  margin-top: 32px;
+  margin-bottom: 120px;
+}
+
+/* firstsection */
+.headerbg {
+  background-image: url(images/ladder-Illustration-1.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+.wrapper-header {
+  width: 100%;
+  max-width: 721px;
+  display: flex;
+  flex-direction: column;
+}
+h1 + p {
+  width: 100%;
+  width: 565px;
+}
+form {
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+.payments {
+  margin-bottom: 200px;
+}
+/* secondsection */
+.grid {
+  width: 100%;
+  display: flex;
+}
+.gr1 {
+  align-items: start;
+  gap: 188px;
+}
+.about-us p {
+  width: 100%;
+  max-width: 712px;
+}
+img[alt="illustration of girl on the moon"] {
+  width: 580px;
+}
+h2 {
+  margin-bottom: 20px;
+}
+ul.large {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 60px;
+}
+.about-us {
+  margin-bottom: 200px;
+}
+/* tirdsection */
+.howItWorks {
+  background-image: url(images/spanner-Illustration.svg);
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+.howItWorks .grid div {
+  width: 100%;
+  max-width: 659px;
+}
+h3 {
+  margin-bottom: 16px;
+}
+.icon-box {
+  display: flex;
+  gap: 28px;
+}
+.icon-list {
+  width: 100%;
+  max-width: 627px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  margin-bottom: 200px;
+}
+/* fourth section */
+.wide {
+  justify-content: space-between;
+}
+img[alt="man on a pig-Illustration"] {
+  width: 470px;
+}
+img[alt="man on a pig-Illustration"] + div h2,
+img[alt="man on a pig-Illustration"] + div p {
+  text-align: end;
+}
+img[alt="man on a pig-Illustration"] + div h2 {
+  width: 100%;
+  max-width: 743px;
+  margin-left: auto;
+}
+img[alt="man on a pig-Illustration"] + div a.btn2 {
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+}
+/* grids */
+.grids {
+  margin-top: 60px;
+  display: flex;
+  gap: 120px;
+  margin-bottom: 200px;
+}
+.box {
+  width: 100%;
+  padding-left: 40px;
+  padding-top: 52px;
+  padding-bottom: 40px;
+}
+.first .big {
+  margin-top: 153px;
+}
+.second .big,
+.third .big {
+  margin-top: 49px;
+}
+p.large {
+  margin-bottom: 60px;
+  width: 100%;
+}
+p.large + ul {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+/* lastsection */
+.CQbg {
+  background-image: url(images/giraffe-Illustration.svg);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 480px;
+}
+.accordion {
+  margin-top: 61px;
+  margin-bottom: 200px;
+}
+.acc-text {
+  width: 100%;
+  max-width: 746px;
+}
+.CQ {
+  width: 100%;
+  max-width: 840px;
+}
+.CQ h2 + p {
+  width: 554px;
+}
+/* footer */
+.footer {
+  padding: 32px 31px 51px 32px;
+}
+.ftr-wrapper1 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 72px;
+}
+
+.ftrdiv1 {
+  width: 100%;
+  max-width: 484px;
+}
+.ftr-wrapper2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* big screen */
+@media screen and (max-width: 1440px) {
+  .container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  header {
+    margin-top: 32px;
+    margin-bottom: 120px;
+  }
+
+  /* firstsection */
+  .headerbg {
+    background-image: url(images/ladder-Illustration.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+  }
+  .wrapper-header {
+    width: 100%;
+    max-width: 721px;
+    display: flex;
+    flex-direction: column;
+  }
+  p {
+    width: 100%;
+    width: 565px;
+  }
+  form {
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 80px;
+  }
+  .payments {
+    margin-bottom: 256px;
+  }
+  /* secondsection */
+  .grid {
+    width: 100%;
+    display: flex;
+  }
+  .gr1 {
+    align-items: start;
+    gap: 0px;
+  }
+  img[alt="illustration of girl on the moon"] {
+    width: 442px;
+  }
+  h2 {
+    margin-bottom: 20px;
+  }
+  ul.large {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 60px;
+  }
+  .about-us {
+    margin-bottom: 120px;
+  }
+  /* tirdsection */
+  .howItWorks {
+    background-image: url(images/spanner-Illustration-1.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+  a.HIW + h2 {
+    width: 100%;
+    max-width: 398px;
+  }
+  h3 {
+    margin-bottom: 16px;
+  }
+  .icon-box {
+    display: flex;
+    gap: 28px;
+  }
+  .icon-list {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    margin-bottom: 120px;
+  }
+  /* fourth section */
+  img[alt="man on a pig-Illustration"] {
+    width: 379.76px;
+  }
+  img[alt="man on a pig-Illustration"] + div h2,
+  img[alt="man on a pig-Illustration"] + div p {
+    text-align: end;
+  }
+  img[alt="man on a pig-Illustration"] + div h2 {
+    width: 100%;
+    max-width: 398px;
+    margin-left: auto;
+  }
+  img[alt="man on a pig-Illustration"] + div a.btn2 {
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+  }
+  /* grids */
+  .grids {
+    margin-top: 58px;
+    display: flex;
+    gap: 24px;
+    margin-bottom: 123px;
+  }
+  .box {
+    width: 100%;
+    padding-left: 20px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+  .box .big {
+    margin: 0 40px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  .first .big {
+    margin-top: 153px;
+  }
+  .second .big,
+  .third .big {
+    margin-top: 49px;
+  }
+  p.large {
+    margin-bottom: 60px;
+    width: 100%;
+    max-width: 213px;
+  }
+  .second p.large {
+    max-width: 193px;
+  }
+  p.large + ul {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  /* lastsection */
+  .CQbg {
+    background-image: url(images/giraffe-Illustration.svg);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 390px;
+  }
+  .accordion {
+    margin-top: 61px;
+    margin-bottom: 120px;
+  }
+  .acc-text {
+    width: 100%;
+    max-width: 660px;
+  }
+  .CQ {
+    width: 100%;
+    max-width: 700px;
+  }
+  /* footer */
+  .footer {
+    padding: 32px 31px 51px 32px;
+  }
+  .ftr-wrapper1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 72px;
+  }
+  .ftrdiv1 {
+    width: 100%;
+    max-width: 484px;
+  }
+  .ftr-wrapper2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+/* medium screen */
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  header {
+    margin-top: 32px;
+    margin-bottom: 120px;
+  }
+
+  /* firstsection */
+  .headerbg {
+    background-image: url(images/ladder-Illustration.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+  }
+  .wrapper-header {
+    width: 100%;
+    max-width: 613px;
+    display: flex;
+    flex-direction: column;
+  }
+  p {
+    width: 100%;
+    width: 565px;
+  }
+  form {
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 80px;
+  }
+  .payments {
+    margin-bottom: 180px;
+  }
+  /* secondsection */
+  .grid {
+    width: 100%;
+    display: flex;
+  }
+  .gr1 {
+    align-items: start;
+  }
+  img[alt="illustration of girl on the moon"] {
+    width: 442px;
+  }
+  h2 {
+    margin-bottom: 20px;
+  }
+  ul.large {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 60px;
+  }
+  .about-us {
+    margin-bottom: 120px;
+  }
+  /* tirdsection */
+  .howItWorks {
+    background-image: url(images/spanner-Illustration-1.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+  a.HIW + h2 {
+    width: 100%;
+    max-width: 398px;
+  }
+  h3 {
+    margin-bottom: 16px;
+  }
+  .icon-box {
+    display: flex;
+    gap: 28px;
+  }
+  .icon-list {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    margin-bottom: 120px;
+  }
+  /* fourth section */
+  img[alt="man on a pig-Illustration"] {
+    width: 379.76px;
+  }
+  img[alt="man on a pig-Illustration"] + div h2,
+  img[alt="man on a pig-Illustration"] + div p {
+    text-align: end;
+  }
+  img[alt="man on a pig-Illustration"] + div h2 {
+    width: 100%;
+    max-width: 398px;
+    margin-left: auto;
+  }
+  img[alt="man on a pig-Illustration"] + div a.btn2 {
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+  }
+  /* grids */
+  .grids {
+    margin-top: 58px;
+    display: flex;
+    gap: 24px;
+    margin-bottom: 123px;
+  }
+  .box {
+    width: 100%;
+    padding-left: 20px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+  .first .big {
+    margin-top: 153px;
+  }
+  .second .big,
+  .third .big {
+    margin-top: 49px;
+  }
+  p.large {
+    margin-bottom: 60px;
+    width: 100%;
+    max-width: 213px;
+  }
+  .second p.large {
+    max-width: 193px;
+  }
+  p.large + ul {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  /* lastsection */
+  .CQbg {
+    background-image: url(images/giraffe-Illustration.svg);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 390px;
+  }
+  .accordion {
+    margin-top: 61px;
+    margin-bottom: 120px;
+  }
+  .acc-text {
+    width: 100%;
+    max-width: 660px;
+  }
+  .CQ {
+    width: 100%;
+    max-width: 700px;
+  }
+  /* footer */
+  .footer {
+    padding: 32px 31px 51px 32px;
+  }
+  .ftr-wrapper1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 72px;
+  }
+  dl {
+    margin-top: 60px;
+  }
+  .ftrdiv1 {
+    width: 100%;
+    max-width: 484px;
+  }
+  .ftr-wrapper2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+/* small screen */
+@media screen and (max-device-width: 600px) and (orientation: portrait) {
+  /* display */
+  .big-display {
+    display: none;
+  }
+  .small-display {
+    display: block;
+  }
+  /* typography */
+  h1 {
+    font-size: 52px;
+    letter-spacing: -4px;
+  }
+  h2 {
+    font-size: 44px;
+    letter-spacing: -4px;
+  }
+  h3 {
+    font-size: 28px;
+    line-height: 120%;
+    letter-spacing: 0;
+  }
+  /* sizing */
+  .container {
+    width: 100%;
+    max-width: 328px;
+    margin: 0 auto;
+  }
+  /* images */
+  img[alt="illustration of girl on the moon"] {
+    width: 328px;
+  }
+  img[alt="illustration of girl holding a spanner"] {
+    width: 280px;
+  }
+  img[alt="man on a pig-Illustration"] {
+    width: 280px;
+  }
+  img[alt="illustration of man with a giraffe"] {
+    width: 328px;
+  }
+  /* header */
+  .main-header2 {
+    width: 100%;
+    max-width: 328px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    margin-top: 20px;
+  }
+  /* firstsection */
+  .headerbg {
+    background-image: none;
+  }
+  h1 {
+    margin-bottom: 20px;
+  }
+  .wrapper-header form {
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
+  form div {
+    max-width: 328px;
+  }
+  /* secondsection */
+  .grid {
+    margin-top: 80px;
+    display: grid;
+  }
+  h2 {
+    margin-bottom: 20px;
+  }
+  p {
+    width: 100%;
+    max-width: 328px;
+  }
+  ul.large {
+    padding-left: 1.5em;
+    width: 100%;
+    max-width: 328px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    text-indent: -1.5em;
+  }
+
+  img[alt="illustration of girl on the moon"] {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  /* thirdsection */
+  .howItWorks {
+    background-image: none;
+  }
+  img[alt="illustration of girl holding a spanner"] {
+    margin-top: 60px;
+    margin-bottom: 40px;
+    margin-left: 34px;
+  }
+  ul.icon-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .icon-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  img[alt="icon"] {
+    width: 100px;
+  }
+  /* fourthsection */
+  img[alt="man on a pig-Illustration"] {
+    margin: 40px 24px;
+  }
+  img[alt="man on a pig-Illustration"] + div h2,
+  img[alt="man on a pig-Illustration"] + div p {
+    text-align: start;
+  }
+  img[alt="man on a pig-Illustration"] + div a.btn2 {
+    display: inline;
+  }
+  .first,
+  .second {
+    margin-bottom: 24px;
+  }
+  sub,
+  sup {
+    letter-spacing: 0px;
+  }
+  .grids {
+    flex-direction: column;
+  }
+  .box {
+    padding-left: 20px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+  .box .big {
+    margin: 0 40px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  .first .big {
+    margin-top: 153px;
+  }
+  .second .big,
+  .third .big {
+    margin-top: 49px;
+  }
+  p.large {
+    margin-bottom: 60px;
+    width: 100%;
+    max-width: 213px;
+  }
+  .second p.large {
+    max-width: 193px;
+  }
+  p.large + ul {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  /* lastsection */
+  .CQbg {
+    background-image: none;
+  }
+  .acc-text {
+    margin-top: 20px;
+  }
+  img[alt="illustration of man with a giraffe"] {
+    margin-top: 44.8px;
+    margin-bottom: 45.07px;
+  }
+  .accordion {
+    margin-bottom: 80px;
+  }
+  /* footer */
+  footer h2 {
+    font-size: 32px;
+    letter-spacing: -1px;
+  }
+  .footer {
+    width: 100%;
+    max-width: 328px;
+    margin: 0 auto;
+  }
+  .footer ul,
+  dl,
+  .ftr-wrapper2 {
+    text-align: center;
+  }
+  .ftr-wrapper1 {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    margin-bottom: 60px;
+  }
+  .ftr-wrapper2 {
+    display: flex;
+    flex-direction: column;
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  dl {
+    margin-top: 60px;
+  }
+  footer {
+    padding: 32px 0;
+  }
+}
+/* @media screen  and (orientation: landscape) {
+  body{
+    background-color: aqua;
+  }
+} */
